@@ -1,0 +1,42 @@
+:root {
+    --background-color: #000; /* temporary color, will make nice in future */
+    /* will fill misc colors in future */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color)
+}
+
+#navbar {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+}
+
+#nav-float-right {
+    right: 0px; /* set container position 0px from the right */
+    position: absolute; /* allow position to be set exactly */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    height: 70px;
+    width: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
