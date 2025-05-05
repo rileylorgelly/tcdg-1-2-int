@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
-    --background-color: #000; /* temporary color, will make nice in future */
-    /* will fill misc colors in future */
+    --background-color: #19181B; 
+    --text-content-color: #fff;
 }
 
-* {
+* { 
     padding: 0;
     margin: 0;
+
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -16,6 +20,8 @@ body {
     /* lock navbar to top*/
     position: fixed;
     top: 0;
+
+    z-index: 69420;
 
     width: 100vw;
     height: 70px;
@@ -43,8 +49,8 @@ body {
 }
 
 .nav-item-icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
 }
 
@@ -52,6 +58,10 @@ body {
     overflow: hidden;
     height: 90vh;
     width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header-bg-img-container {
@@ -67,4 +77,29 @@ body {
 
     flex: 1;
     object-fit: cover;
+}
+
+#header-text {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: var(--text-content-color);
+}
+
+#header-text h1 {
+    font-weight: 900;
+    font-size: 50px;
+
+    padding-right: 20%;
+    padding-left: 70px;
+}
+
+#header-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    
+    padding-left: 20%;
+    padding-right: 70px;
 }
