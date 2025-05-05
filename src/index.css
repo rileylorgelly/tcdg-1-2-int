@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--background-color)
+    background-color: var(--background-color);
 }
 
 #navbar {
@@ -103,6 +103,6 @@ body {
     font-weight: 600;
 
     right: 0;
-    width: 300px;
+    width: 400px;
     padding-right: 140px;
 }
