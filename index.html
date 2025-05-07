@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="src/img/Icon.png">
+    <script defer src="src/index.js"></script>
     <title>NZ Birds</title>
 </head>
 <body>
@@ -29,24 +30,29 @@
         </div>
     </nav>
     <section id="header-section">
-        <div id="header-text">
-            <h1>Native<br>Birds<br>Of<br>New<br>Zealand</h1>
-            <h2>Kaitiakitanga is the Māori value of caring for the environment - a commitment to protect the natural world for future generations. This site celebrates Aotearoa’s unique native birds and encourages us all to be kaitiaki, or guardians, of their habitats, ensuring their songs and presence remain part of our land’s story.</h2>
-        </div>
+            <div id="header-text">
+                <h1>Native<br>Birds<br>Of<br>New<br>Zealand</h1>
+                <h2>Kaitiakitanga is the Māori value of caring for the environment - a commitment to protect the natural world for future generations. This site celebrates Aotearoa’s unique native birds and encourages us all to be kaitiaki, or guardians, of their habitats, ensuring their songs and presence remain part of our land’s story.</h2>
+            </div>
         <div id="header-bg-img-container"> <!--divs r referenced with #header-bg-img-container div {} in css, to avoid div class name clusterfuck-->
-            <img class="header-bg-image" src="src/img/design/kiwi-bg-image.png" alt="kiwi-bg-img">
-            <img class="header-bg-image" src="src/img/design/tui-bg-image.png" alt="tui-bg-img">
-            <img class="header-bg-image" src="src/img/design/kereru-bg-image.png" alt="pig-bg-img">
+            <div><img class="header-bg-image" src="src/img/design/kiwi-bg-image.png" alt="kiwi-bg-img"></div>
+            <div><img class="header-bg-image" src="src/img/design/tui-bg-image.png" alt="tui-bg-img"></div>
+            <div><img class="header-bg-image" src="src/img/design/kereru-bg-image.png" alt="pig-bg-img"></div>
         </div>
     </section>
     <section id="birds-section">
         <div id="birds-grid">
-            <div data-birdtype="tui" class="bird-grid-item">
+            <!-- <div data-birdtype="bird identifier" class="bird-grid-item">
                 <div class="bird-grid-bottom-bar">
                     <h2></h2>
                     <img id="bird-readmore" src="src/img/misc/readmore.svg" alt="bird-readmore">
                 </div>
             </div>
+            
+            <div data-birdtype="bird identifier" class="bird-grid-item"></div>
+            -->
+
+            <div data-birdtype="bird identifier" class="bird-grid-item"></div>
         </div>
     </section>
     <footer>

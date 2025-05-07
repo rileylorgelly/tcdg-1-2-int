@@ -9,6 +9,8 @@
     padding: 0;
     margin: 0;
 
+    box-sizing: border-box;
+    
     font-family: "Inter", sans-serif;
 }
 
@@ -57,26 +59,11 @@ body {
 #header-section {
     overflow: hidden;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#header-bg-img-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.header-bg-image {
-    height: 100%;
-    width: 100%;
-
-    flex: 1;
-    object-fit: cover;
 }
 
 #header-text {
@@ -85,24 +72,53 @@ body {
     flex-direction: row;
     align-items: center;
 
+    width: 80%;
+    height: 100%;
+
     color: var(--text-content-color);
 }
 
 #header-text h1 {
-    position: fixed;
+    position: inherit;
     font-weight: 900;
-    font-size: 68px;
+    font-size: 58px;
 
     left: 0;
-    padding-left: 140px;
 }
 
 #header-text h2 {
-    position: fixed;
-    font-size: 22px;
+    position: inherit;
+    font-size: 26px;
     font-weight: 600;
 
     right: 0;
-    width: 400px;
-    padding-right: 140px;
+    width: 500px;
+}
+
+#header-bg-img-container {
+    width: 100vw;
+    height: 100%;
+
+    color: var(--text-content-color);
+
+    display: flex;
+    flex-direction: row;
+}
+
+#header-bg-img-container div {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.header-bg-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#birds-grid {
+    display: grid; 
+    width: calc(100% - 50px);
+    padding-left: 40px;
 }
