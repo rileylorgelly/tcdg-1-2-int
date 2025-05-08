@@ -68,7 +68,7 @@ body {
 
 #scroll-indicator {
     position: absolute;
-    z-index: 12;
+    z-index: 32; /* d */
 
     bottom: 0;
     padding-bottom: 40px;
