@@ -81,7 +81,8 @@ body {
 
 #birds-section {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #birds-grid {
@@ -90,11 +91,24 @@ body {
     grid-template-rows: auto;
     gap: 25px;
 
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     
-    width: calc(100% - 50px);
+    width: calc(100% - 100px);
     height: auto;
+}
+
+#birds-header-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bird-header-text {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--text-content-color);
 }
 
 .bird-grid-item {

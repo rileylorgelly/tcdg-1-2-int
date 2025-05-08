@@ -26,7 +26,7 @@ function gotolink(link, event) {
         case 0:
             window.location.href = link;
             break;
-        case 1:
+        case 1: /* middle click, bcuz i use it yk */
             window.open(link, '_blank').focus();
             break;
         default:
@@ -39,5 +39,5 @@ const elements = document.querySelectorAll('[data-link]').forEach((item) => {
     if (!link) return console.error(`${item.id} is missing the fucking data-link, even though i used the data query selector, why the fuck isn';t it there, help. it should be!!!`) /* ignore length */
 
     item.addEventListener("click", (e) => gotolink(link, e));
-    item.addEventListener("auxclick", (e) => gotolink(link, e));
+    item.addEventListener("auxclick", (e) => gotolink(link, e)); /* other mouse clicks, for middle click. */ 
 });
