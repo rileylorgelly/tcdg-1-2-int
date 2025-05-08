@@ -51,4 +51,10 @@
     width: 45px;
     height: 45px;
     object-fit: contain;
+
+    transition: 50ms;
+}
+
+.nav-item-icon:hover {
+    filter: brightness(0.85);
 }
