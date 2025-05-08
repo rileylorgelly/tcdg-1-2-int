@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --background-color: #19181B; 
+    --text-content-color: #fffffff0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    -webkit-user-drag: none;
+    user-select: text; 
+}
+
+#navbar {
+    /* lock navbar to top*/
+    position: fixed;
+    top: 0;
+
+    z-index: 69420;
+
+    width: 100vw;
+    height: 70px;
+
+    display: flex;
+}
+
+#nav-float-right {
+    right: 0px; /* set container position 0px from the right */
+    position: absolute; /* allow position to be set exactly */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    height: 70px;
+    width: 70px;
+    
+    cursor: pointer; /* make nav item buttons look clickable, links done in js. */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
