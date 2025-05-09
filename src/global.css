@@ -34,6 +34,13 @@ body {
     height: 70px;
 
     display: flex;
+    
+    transition: 50ms;
+}
+
+.navbar-active {
+    transition: 200ms;
+    background-color: #fff;
 }
 
 #nav-float-right {
@@ -60,9 +67,18 @@ body {
     height: 45px;
     object-fit: contain;
 
-    transition: 50ms;
+    transition: 80ms;
 }
 
 .nav-item-icon:hover {
-    filter: brightness(0.85);
+    filter: brightness(0.6);
+}
+
+.nav-item-active {
+    transition: 100ms;
+    filter: brightness(0);
+}
+
+.nav-item-active:hover {
+    filter: brightness(0.3);
 }
