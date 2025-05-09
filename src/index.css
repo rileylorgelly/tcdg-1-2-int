@@ -68,7 +68,7 @@
 }
 
 .header-bg-image {
-    filter: brightness(0.9);
+    filter: brightness(0.88) invert();
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -89,7 +89,7 @@
     padding-top: 10px;
     padding-bottom: 50px;
     
-    width: calc(100% - 100px);
+    width: calc(100% - 350px);
     height: auto;
 }
 
@@ -108,9 +108,10 @@
 
 .bird-grid-item {
     display: flex;
+    filter: brightness(0.98) blur(3);
     justify-content: center;
     
-    background-color: #92CEA6; /* placeholder color, will be filled with image */
+    background-color: #92CEA6; /* placeholder color, will be filled with images */
     border-radius: 15px;
 
     width: 100%;

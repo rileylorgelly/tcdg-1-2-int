@@ -1,3 +1,5 @@
+window.history.scrollRestoration = 'manual'
+
 document.querySelectorAll(".bird-grid-item").forEach((item) => {
     const bird = item.dataset.birdtype;
     if (!bird) return console.warn(`${item.id} is missing a birdtype, despite having the 'bird-grid-item' class.`)

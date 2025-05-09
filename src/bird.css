@@ -14,10 +14,11 @@
 } 
 
 #bird-info {
-    padding-top: 30px;
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
-    gap: 30px
+    align-items: center;
+    gap: 40px
 }
 
 #bird-info h2 {
@@ -27,7 +28,7 @@
 #bird-image {
     border-radius: 15px;
     width: 400px;
-    height: auto;
+    height: 400px;
     aspect-ratio: 1 / 1;
     background-color: #fff;
     object-fit: cover;
