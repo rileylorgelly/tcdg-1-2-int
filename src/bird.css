@@ -21,15 +21,16 @@
 }
 
 #bird-info h2 {
-    width: 350px;
+    width: 400px;
 }
 
 #bird-image {
     border-radius: 15px;
-    width: 350px;
+    width: 400px;
     height: auto;
     aspect-ratio: 1 / 1;
     background-color: #fff;
+    object-fit: cover;
 }
 
 h1, h2{

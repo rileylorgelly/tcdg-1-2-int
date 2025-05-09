@@ -13,5 +13,9 @@ fetch(`src/birdinfo/${species}.txt`)
     const birdName = splitBirdInfo[0]
     const birdDescription = splitBirdInfo[1]
 
-    if (!birdName | !birdDescription) return error(`${species}.txt birdinfo is malformed.`);
+    if (!birdName | !birdDescription) return console.error(`${species}.txt birdinfo is malformed.`);
+
+    document.querySelector("#main-page h1").textContent = birdName;
+    document.querySelector("#bird-info h2").textContent = birdDescription;
+    document.querySelector("#bird-image").src = `src/img/birds/${species}.png`
 });
